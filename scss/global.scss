@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
 
-ul, li{
+ul, ol, li{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -24,6 +24,9 @@ button{
     background-color: transparent;
     padding: 0;
     border: none;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 html{
@@ -37,6 +40,7 @@ body{
     font-family: "Roboto", sans-serif;
     // font-family: "Montserrat", sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 *, *::after, *::before{
@@ -47,4 +51,36 @@ body{
     max-width: 1760px;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+.section__title{
+    font-weight: 300;
+    font-size: 42px;
+    text-transform: uppercase;
+    padding-top: 150px;
+}
+
+@media (max-width: 1350px) {
+    .section__title{
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section__title{
+        padding-top: 50px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 540px) {
+    .section__title{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 360px) {
+    .section__title{
+        font-size: 24px;
+    }
 }
